@@ -1,0 +1,4 @@
+{
+	"variable": "text",
+	"title": "{{ site.title | jsonify}}"
+}
