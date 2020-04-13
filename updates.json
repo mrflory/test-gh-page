@@ -2,6 +2,11 @@
 layout: null
 ---
 {
-	"variable": "text",
-	"title": "{{ site.title | jsonify}}"
+	"url": {{ site.github.latest_release.url | jsonify }},
+	"html_url": {{ site.github.latest_release.html_url | jsonify }},
+	"id": {{ site.github.latest_release.id | jsonify }},
+	"tag_name": {{ site.github.latest_release.tag_name | jsonify }},
+	"name": {{ site.github.latest_release.name | jsonify }},
+	"created_at": {{ site.github.latest_release.created_at | jsonify }},
+	"published_at": {{ site.github.latest_release.published_at | jsonify }}
 }
